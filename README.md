@@ -1,5 +1,5 @@
 # Analysis of Minimal Unavoidable Sets
-![](/images/first_image_2.webp)
+![](/images/first_image.webp)
 
 ## INTRODUCTION
 In this document I attempt to analyze and classify the structure of some (not all) minimal unavoidable sets in Sudoku.
@@ -42,7 +42,7 @@ It is important to note that, as long as any cell in a minimal unavoidable set i
 
 ### The AB-BA type
 
-![]()
+![](/images/ab-ba_mua_example.webp)
 
 <sup>
   
@@ -60,7 +60,7 @@ Characteristics:
 
 ### The AB-BC-CA type
 
-![]()
+![](/images/ab-bc-ca_mua_example.webp)
 
 <sup>
   
@@ -74,7 +74,7 @@ Characteristics:
   
 ### The ABC-BCA type
 
-![]()
+![](/images/abc-bca_mua_example.webp)
 
 <sup>
   
@@ -85,3 +85,34 @@ Characteristics:
 - Only has three digits.
 - Occupies at least two boxes in a band or stack.
 - Has three cells per box.
+
+
+## THE CONNECTIVITY STRUCTURE
+
+The previous images of minimal unavoidable sets show sets that occupy only one band or stack. However, these types of sets can occupy many boxes of other bands and stacks.
+
+Below is an example of a minimal unavoidable set of the AB-BA type occupying boxes of many bands and stacks, with a simple connectivity structure.
+
+![](/images/)
+
+As you can see, this set has two extremes, in boxes 2 and 4, that are connected through the cells in box 1. I define the cells in box 1 as the “connector”.
+
+### Connectors
+
+A connector serves as a link between two or more parts of an unavoidable set that are in boxes from different bands and stacks. In the previous example, boxes 2 and 4 belonged to different bands and stacks, and box 1 had the connector.
+
+A connector is formed by 2 cells in a box that are in different columns and rows. If 2 cells belong to the same column or row within a box, they don’t form a connector.
+
+### Examples of different connectivity structures
+
+Below are examples of grids with AB-BA minimal unavoidable sets with different connectivity structures.
+
+![](/images/)
+![](/images/)
+![](/images/)
+
+The examples above use the cells with the digits 1 and 2, but you can choose any pair of digits, and observe that they form minimal unavoidable sets of the AB-BA type, with different connectivity structures.
+
+The set of 18 cells containing any two selected digits (which is an unavoidable set) can be partitioned into one or more minimal unavoidable sets of the AB-BA type. This is because of how the distribution of digits in solved grids works, and you can confirm it is the case for every grid.
+
+Therefore, for each pair of digits, you can find at least one minimal unavoidable set of the AB-BA type in any grid. And because there are 36 different pairs of digits, any grid has at least 36 distinct minimal unavoidable sets of the AB-BA type.
