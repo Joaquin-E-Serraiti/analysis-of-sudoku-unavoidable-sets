@@ -20,6 +20,14 @@ Some unavoidable sets contain other unavoidable sets, meaning that a subset of t
 ### Examples
 ![](/images/ua_example.webp)
 
+<sup>
+  
+- 000000000000430000000000000000120000000340000000000000000210000000000000000000000
+  
+- 328951746516437289794682351485129637967348512132576894653214978271895463849763125
+
+</sup>
+
 Above is an example of an unavoidable set in a complete grid. When we remove the digits from the cells of the unavoidable set, the resulting incomplete grid has more than one solution (you can try finding all the solutions).
 
 However, that unavoidable set contains two minimal unavoidable sets.
@@ -36,6 +44,15 @@ It is important to note that, as long as any cell in a minimal unavoidable set i
 
 ![]()
 
+<sup>
+  
+- 100000020000000000200000010000000000000000000000000000000000000000000000000000000
+
+- 003400000004000003000300004000000000000000000000000000000000000000000000000000000
+
+- 193487625864215793257369814376154982581926347942738156715692438629843571438571269
+</sup>
+
 Characteristics:
 - Only has two digits.
 - Occupies at least two boxes in a band or stack.
@@ -45,6 +62,11 @@ Characteristics:
 
 ![]()
 
+<sup>
+  
+- 000000000000000000000000000000000000001020300002030100000000000000000000000000000
+</sup>
+
 Characteristics:
 - Only has three digits.
 - Occupies at least all three boxes in a band or stack.
@@ -52,8 +74,12 @@ Characteristics:
   
 ### The ABC-BCA type
 
-
 ![]()
+
+<sup>
+  
+- 000000000000000000000000000000000000000000000000000000010002000020003000030001000
+</sup>
 
 Characteristics:
 - Only has three digits.
