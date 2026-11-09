@@ -97,7 +97,15 @@ The previous images of minimal unavoidable sets show sets that occupy only one b
 
 Below is an example of a minimal unavoidable set of the chain type with two digits, occupying boxes of many bands and stacks, and with a simple connectivity structure.
 
-![](/images/)
+![](/images/connectivity_structure_example.webp)
+
+<sup>
+
+- 010020000200010000000000000000000000120000000000000000000000000000000000000000000
+
+- 716923584283514796549687321864375912127498653395162478972836145438751269651249837
+  
+</sup>
 
 As you can see, this set has two extremes, in boxes 2 and 4, that are connected through the cells in box 1. I define the cells in box 1 as the “connector”.
 
@@ -113,7 +121,35 @@ A connector is formed by 2 cells in a box that are in different columns and rows
 
 These are examples of grids with AB-BA-AB minimal unavoidable sets with different connectivity structures:
 
-![](/images/)
+![](/images/ab-ba-ab_connectivity_example_1.webp)
+
+<sup>
+
+- 000200010010000020020001000000000000000012000000000000000000000000120000000000000
+
+- 357298416914673825628451793246985137579312684183764952831547269465129378792836541
+  
+</sup>
+
+![](/images/ab-ba-ab_connectivity_example_2.webp)
+
+<sup>
+
+- 000000000012000000000000120000000000201000000000000012100020000000010200020000001
+
+- 975162438812943657346785129687231594231594786594876312159427863768319245423658971
+  
+</sup>
+
+![](/images/ab-ba-ab_connectivity_example_3.webp)
+
+<sup>
+
+- 002000001100020000000001200001000020000200100020010000000002010200100000010000002
+
+- 942735681158629437673481295731864529865297143429513768586372914294158376317946852
+  
+</sup>
 
 These are examples of grids with ABC-BCA minimal unavoidable sets with different connectivity structures:
 
