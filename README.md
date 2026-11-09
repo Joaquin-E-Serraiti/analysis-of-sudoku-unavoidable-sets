@@ -91,7 +91,7 @@ Characteristics:
 </sup>
 
 Characteristics:
-- Can have between 2 and 9 digits.
+- Has between 2 and 9 digits.
 - Occupies at least two boxes in a band or stack.
 
 
