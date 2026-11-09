@@ -40,79 +40,117 @@ It is important to note that, as long as any cell in a minimal unavoidable set i
 
 ## SOME BASIC TYPES OF MINIMAL UNAVOIDABLE SETS
 
-### The AB-BA type
+### The AB-BA-AB type
 
-![](/images/ab-ba_mua_example.webp)
+![](/images/ab-ba-ab_example.webp)
 
 <sup>
   
-- 100000020000000000200000010000000000000000000000000000000000000000000000000000000
+- 010020000020000010000010020000000000000000000000000000000000000000000000000000000
 
-- 003400000004000003000300004000000000000000000000000000000000000000000000000000000
-
-- 193487625864215793257369814376154982581926347942738156715692438629843571438571269
+- 719823456325649718486715923698371542154982637237456891961538274542167389873294165
 </sup>
 
 Characteristics:
 - Only has two digits.
-- Occupies at least two boxes in a band or stack.
-- Has two cells per box.
-
-### The AB-BC-CA type
-
-![](/images/ab-bc-ca_mua_example.webp)
-
-<sup>
-  
-- 000000000000000000000000000000000000001020300002030100000000000000000000000000000
-</sup>
-
-Characteristics:
-- Only has three digits.
 - Occupies at least all three boxes in a band or stack.
-- Has two cells per box.
-  
+
 ### The ABC-BCA type
 
-![](/images/abc-bca_mua_example.webp)
+![](/images/abc-bca_example.webp)
 
 <sup>
   
-- 000000000000000000000000000000000000000000000000000000010002000020003000030001000
+- 000000000000000000000000000000000000000000000000000000001000200002000300003000100
 </sup>
 
 Characteristics:
-- Only has three digits.
 - Occupies at least two boxes in a band or stack.
-- Has three cells per box.
+
+### The chain type
+
+![](/images/chain_type_example_1.webp)
+
+<sup>
+  
+- 000000000000000000000000000000000000010020000020010000000000000000000000000000000
+
+- 000000000000000000000000806000000000000000605000000000000000508000000000000000000
+
+- 245698137861437952937152846589376214713924685624815793196243578372589461458761329
+</sup>
+
+![](/images/chain_type_example_2.webp)
+
+<sup>
+  
+- 205698107000000000907152806000000000000000000000000000000000000000000000000000000
+
+- 000000000000000000000000000000000000000000000000000000196243578372589461000000000
+
+</sup>
+
+Characteristics:
+- Can have between 2 and 9 digits.
+- Occupies at least two boxes in a band or stack.
 
 
 ## THE CONNECTIVITY STRUCTURE
 
 The previous images of minimal unavoidable sets show sets that occupy only one band or stack. However, these types of sets can occupy many boxes of other bands and stacks.
 
-Below is an example of a minimal unavoidable set of the AB-BA type occupying boxes of many bands and stacks, with a simple connectivity structure.
+Below is an example of a minimal unavoidable set of the chain type with two digits, occupying boxes of many bands and stacks, and with a simple connectivity structure.
 
 ![](/images/)
 
 As you can see, this set has two extremes, in boxes 2 and 4, that are connected through the cells in box 1. I define the cells in box 1 as the “connector”.
 
+I define the minimal unavoidable sets that have no connectors as sets with no connectivity structure.
+
 ### Connectors
 
-A connector serves as a link between two or more parts of an unavoidable set that are in boxes from different bands and stacks. In the previous example, boxes 2 and 4 belonged to different bands and stacks, and box 1 had the connector.
+A connector serves as a link between two parts of an unavoidable set that are in boxes from different bands and stacks. In the previous example, boxes 2 and 4 belonged to different bands and stacks, and box 1 had the connector.
 
 A connector is formed by 2 cells in a box that are in different columns and rows. If 2 cells belong to the same column or row within a box, they don’t form a connector.
 
 ### Examples of different connectivity structures
 
-Below are examples of grids with AB-BA minimal unavoidable sets with different connectivity structures.
+These are examples of grids with AB-BA-AB minimal unavoidable sets with different connectivity structures:
 
 ![](/images/)
+
+These are examples of grids with ABC-BCA minimal unavoidable sets with different connectivity structures:
+
 ![](/images/)
+
+Lastly, these are examples of minimal unavoidable sets of the chain type type, with different connectivity structures:
+
 ![](/images/)
 
-The examples above use the cells with the digits 1 and 2, but you can choose any pair of digits, and observe that they form minimal unavoidable sets of the AB-BA type, with different connectivity structures.
+I haven’t completely figured out how it works, but I believe that, because the ABC-BCA type has three cells in each box, it can form up to three connectors per box, because a connector is formed by 2 cells and there are 3 ways of selecting 2 out of 3 cells. Each connector can connect different parts of a minimal unavoidable set. This allows for weird connectivity structures that I don’t fully understand yet and therefore can’t fully explain. Here is an example of a weird connectivity structures with an ABC-BCA set with up to two connectors on the same box:
 
-The set of 18 cells containing any two selected digits (which is an unavoidable set) can be partitioned into one or more minimal unavoidable sets of the AB-BA type. This is because of how the distribution of digits in solved grids works, and you can confirm it is the case for every grid.
+![](/images/)
 
-Therefore, for each pair of digits, you can find at least one minimal unavoidable set of the AB-BA type in any grid. And because there are 36 different pairs of digits, any grid has at least 36 distinct minimal unavoidable sets of the AB-BA type.
+### Some inferences
+
+Because of how the distribution of digits works in solved grids, you can choose any pair of digits, and observe that they form minimal unavoidable sets of the AB-BA-AB type and/or the chain type, with different connectivity structures.
+
+![](/images/)
+
+The set of 18 cells containing any two selected digits (which is an unavoidable set) can be partitioned into one or more minimal unavoidable sets of the AB-BA-AB type and/or the chain type.
+
+Therefore, for each pair of digits, you can find at least one minimal unavoidable set of the AB-BA-AB or chain type in any grid. And because there are 36 different pairs of digits, any grid has at least 36 distinct minimal unavoidable sets of the AB-BA-AB and/or chain types.
+
+Also, any selected pair of rows or columns in the same band or stack is an unavoidable set. That unavoidable set can be partitioned into one or more minimal unavoidable sets of the chain type only. This is also guaranteed by how the distribution of digits in solved grids work.
+
+![](/images/)
+
+Therefore, because each band and stack has 3 ways of selecting 2 out of its 3 rows or columns, and there are 3 bands and 3 stacks (6 in total), there are at least 18 (3 multiplied by 6) minimal unavoidable sets of the chain type in any grid.
+
+
+
+
+
+
+
+
