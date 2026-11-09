@@ -113,7 +113,7 @@ I define the minimal unavoidable sets that have no connectors as sets with no co
 
 ### Connectors
 
-A connector serves as a link between two parts of an unavoidable set that are in boxes from different bands and stacks. In the previous example, boxes 2 and 4 belonged to different bands and stacks, and box 1 had the connector.
+A connector serves as a link between two parts of an unavoidable set that are in different bands and stacks. You can think of the previous example as 2 minimal unavoidable sets of the chain type, one in the first band and one in the first stack, and box 1 had the connector, merging both sets into one.
 
 A connector is formed by 2 cells in a box that are in different columns and rows. If 2 cells belong to the same column or row within a box, they don’t form a connector.
 
