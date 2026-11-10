@@ -231,7 +231,7 @@ Therefore, for each pair of digits, you can find at least one minimal unavoidabl
 
 Also, any selected pair of rows or columns in the same band or stack is an unavoidable set. That unavoidable set can be partitioned into one or more minimal unavoidable sets of the chain type only. This is also guaranteed by how the distribution of digits in solved grids work.
 
-![](/images/)
+![](/images/two_rows_partition.webp)
 
 Therefore, because each band and stack has 3 ways of selecting 2 out of its 3 rows or columns, and there are 3 bands and 3 stacks (6 in total), there are at least 18 (3 multiplied by 6) minimal unavoidable sets of the chain type in any grid.
 
