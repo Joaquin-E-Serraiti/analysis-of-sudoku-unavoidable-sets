@@ -93,9 +93,9 @@ Characteristics:
 
 ## THE CONNECTIVITY STRUCTURE
 
-The previous images of minimal unavoidable sets show sets that occupy only one band or stack. However, these types of sets can occupy many boxes of other bands and stacks.
+The previous images of minimal unavoidable sets show sets that occupy only one band or stack. However, these types of sets can occupy many bands or stacks.
 
-Below is an example of a minimal unavoidable set of the chain type with two digits, occupying boxes of many bands and stacks, and with a simple connectivity structure.
+Below is an example of a minimal unavoidable set of the chain type with two digits, occupying many bands and stacks, and with a simple connectivity structure.
 
 ![](/images/connectivity_structure_example.webp)
 
@@ -107,13 +107,13 @@ Below is an example of a minimal unavoidable set of the chain type with two digi
   
 </sup>
 
-As you can see, this set has two extremes, in boxes 2 and 4, that are connected through the cells in box 1. I define the cells in box 1 as the “connector”.
+This set has two "extremes", in boxes 2 and 4, that are connected through the cells in box 1. I define the cells in box 1 as the “connector”.
 
-I define the minimal unavoidable sets that have no connectors as sets with no connectivity structure.
+When a minimal unavoidable set has no connectors, I refer to it as a set with no connectivity structure.
 
 ### Connectors
 
-A connector serves as a link between two parts of an unavoidable set that are in different bands and stacks. You can think of the previous example as 2 minimal unavoidable sets of the chain type, one in the first band and one in the first stack, and box 1 had the connector, merging both sets into one.
+A connector serves as a link between two parts of an unavoidable set that are in different bands and/or stacks. You can think of the previous example as 2 minimal unavoidable sets of the chain type, one in the first band and one in the first stack, and box 1 had the connector, merging both sets into one.
 
 A connector is formed by 2 cells in a box that are in different columns and rows. If 2 cells belong to the same column or row within a box, they don’t form a connector.
 
