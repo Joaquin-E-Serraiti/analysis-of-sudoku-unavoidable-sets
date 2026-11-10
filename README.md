@@ -107,7 +107,7 @@ Below is an example of a minimal unavoidable set of the chain type with two digi
   
 </sup>
 
-This set has two "extremes", in boxes 2 and 4, that are connected through the 2 cells in box 1. I define those cells in box 1 as the “connector”.
+This set occupies boxes 1, 2 and 4. The parts in box 2 and 4 are connected through the 2 cells in box 1. I define those cells in box 1 as the “connector”.
 
 When a minimal unavoidable set has no connectors, I refer to it as a set with no connectivity structure.
 
