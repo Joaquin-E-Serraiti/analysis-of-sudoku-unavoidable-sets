@@ -151,11 +151,39 @@ These are examples of grids with AB-BA-AB minimal unavoidable sets with differen
   
 </sup>
 
-These are examples of grids with ABC-BCA minimal unavoidable sets with different connectivity structures:
+These are examples of minimal unavoidable sets of the chain type, with different connectivity structures:
 
-![](/images/)
+![](/images/chain_connectivity_example_1.webp)
 
-Lastly, these are examples of minimal unavoidable sets of the chain type type, with different connectivity structures:
+<sup>
+
+- 000000000000102000000000000010200030000000000020003010000000000000301000000000000
+
+- 594638721783142659261795348615289437437516982829473516148957263956321874372864195
+  
+</sup>
+
+![](/images/chain_connectivity_example_2.webp)
+
+<sup>
+
+- 000000000320000054000000000000000000014025003205031040000000000130000000000000035
+
+- 596417382321986754487253196863794521914825673275631849652348917139572468748169235
+  
+</sup>
+
+![](/images/chain_connectivity_example_3.webp)
+
+<sup>
+
+- 010000200000000000020000001100030002000000000003020100001304020000000000300201040
+
+- 716849253435162798829573461164735982287916534953428176671394825542687319398251647
+  
+</sup>
+
+Lastly, these are examples of grids with ABC-BCA minimal unavoidable sets with different connectivity structures:
 
 ![](/images/)
 
