@@ -219,13 +219,11 @@ I find the ABC-BCA type to be more complex than the other two types of sets. I s
 
 Also, I believe that, because the ABC-BCA type has three cells in each box, it can form up to three connectors per box, because a connector is formed by 2 cells and there are 3 ways of selecting 2 out of 3 cells. This might allow for weird connectivity structures.
 
-![](/images/)
-
 ### Some inferences
 
 Because of how the distribution of digits works in solved grids, you can choose any pair of digits, and observe that they form minimal unavoidable sets of the AB-BA-AB type and/or the chain type, with different connectivity structures.
 
-![](/images/)
+![](/images/ab-ba-ab_and_chain_type_partition.webp)
 
 The set of 18 cells containing any two selected digits (which is an unavoidable set) can be partitioned into one or more minimal unavoidable sets of the AB-BA-AB type and/or the chain type.
 
