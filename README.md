@@ -4,9 +4,9 @@
 ## INTRODUCTION
 In this document I attempt to analyze and classify the structure of some (not all) minimal unavoidable sets in Sudoku.
 
-The names and terminology I use might not be the best or might conflict with other Sudoku terms. If you know of better alternatives, please let me know.
+The names and terminology I use might not be the best or might conflict with other Sudoku terms. If you know of better alternatives, let me know.
 
-If you notice any mistakes, incorrect statements, confusing or incomplete explanations, or think of some information that could be added to this document, please feel welcome to correct me and make suggestions.
+If you notice any mistakes, incorrect statements, confusing or incomplete explanations, or think of some information that could be added to this document, feel welcome to send me corrections and suggestions.
 
 I’m not an expert in Sudoku. I’m just sharing information and ideas I’ve been thinking about and find interesting.
 
@@ -185,9 +185,39 @@ These are examples of minimal unavoidable sets of the chain type, with different
 
 Lastly, these are examples of grids with ABC-BCA minimal unavoidable sets with different connectivity structures:
 
-![](/images/)
+![](/images/abc-bca_connectivity_example_1.webp)
 
-I haven’t completely figured out how it works, but I believe that, because the ABC-BCA type has three cells in each box, it can form up to three connectors per box, because a connector is formed by 2 cells and there are 3 ways of selecting 2 out of 3 cells. Each connector can connect different parts of a minimal unavoidable set. This allows for weird connectivity structures that I don’t fully understand yet and therefore can’t fully explain. Here is an example of a weird connectivity structures with an ABC-BCA set with up to two connectors on the same box:
+<sup>
+
+- 000000000000000000000000000000020001000030002000100003000200010000300020000010030
+
+- 164972358259683174387451269643825791915734682728196543836247915591368427472519836
+  
+</sup>
+
+![](/images/abc-bca_connectivity_example_2.webp)
+
+<sup>
+
+- 010020000020030000030001000000002010000003020000010003000200001000300002000100030
+
+- 514829367729536184836471259378952416691743528245618973453287691167395842982164735
+  
+</sup>
+
+![](/images/abc-bca_connectivity_example_3.webp)
+
+<sup>
+
+- 010000020020000030300000001000000000000000000000000000100000002200000003030000010
+
+- 815739426724615938369824751943176285671582394582493167197358642256941873438267519
+  
+</sup>
+
+I find the ABC-BCA type to be more complex than the other two types of sets. I still don't completely understand all the ways it can have connectivity structures, and I'm not sure that the framework I defined is enough to understand it.
+
+Also, I believe that, because the ABC-BCA type has three cells in each box, it can form up to three connectors per box, because a connector is formed by 2 cells and there are 3 ways of selecting 2 out of 3 cells. This might allow for weird connectivity structures.
 
 ![](/images/)
 
