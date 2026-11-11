@@ -217,7 +217,7 @@ Lastly, these are examples of grids with ABC-BCA minimal unavoidable sets with d
 
 I find the ABC-BCA type to be more complex than the other two types of sets. I still don't completely understand all the ways it can have connectivity structures, and I'm not sure that the framework I defined is enough to understand it.
 
-Also, I believe that, because the ABC-BCA type has three cells in each box, it can form up to three connectors per box, because a connector is formed by 2 cells and there are 3 ways of selecting 2 out of 3 cells. This might allow for weird connectivity structures.
+Also, I believe that, because the ABC-BCA type has three cells in each box, it can form up to three connectors per box, because a connector is formed by 2 cells and there are 3 ways of selecting 2 out of 3 cells. This might allow for weird connectivity structures. This phenomenon also applies to the chain type, but only when it has more than 2 digits.
 
 ### Some inferences
 
