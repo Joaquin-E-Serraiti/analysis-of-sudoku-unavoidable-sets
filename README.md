@@ -247,13 +247,21 @@ This means that each cell in the grid can be part of multiple minimal unavoidabl
 
 ## MIXED STRUCTURES
 
-Some minimal unavoidable sets are the result of connecting parts of two or more different types of minimal unavoidable sets. The previous examples with different connectivity structures had all parts of the same type, but that's not the only possibility.
+The previous examples with different connectivity structures had all parts of the same type (AB-BA-AB, chain, or ABC-BCA type), but that's not the only possibility. Some minimal unavoidable sets are the result of connecting parts of two or more different types of minimal unavoidable sets.
 
-For example, below is a minimal unavoidable set with an AB-BA-AB part, and a chain part.
+For example, below is a minimal unavoidable set with an AB-BA-AB type part, and a chain type part.
 
-![](/images/)
+![](/images/mixed_structure_example_1.webp)
 
-The connector is in box 1. The AB-BA-AB part is in the first stack (left to right), and the chain part is the first band (top to bottom). The 2 different types of sets are connected by the connector in box 1. They stop being 2 individual sets and merge to form 1 new minimal unavoidable set, with what I call "mixed structure".
+<sup>
+
+- 002030010000000000100020030000000000210000000000000000000000000021000000000000000
+
+- 492537618637189254185624937374958162216473589958261743749316825821745396563892471
+  
+</sup>
+
+The connector is in box 1. The AB-BA-AB part is in the first stack (left to right), and the chain part is in the first band (top to bottom). The 2 different types of sets are connected by the connector in box 1. They stop being 2 individual sets and merge to form 1 new minimal unavoidable set, with what I call "mixed structure".
 
 Here are more examples with different mixes and connectivity structures:
 
