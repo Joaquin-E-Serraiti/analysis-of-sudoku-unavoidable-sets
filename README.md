@@ -236,8 +236,32 @@ Also, any selected pair of rows or columns in the same band or stack is an unavo
 Therefore, because each band and stack has 3 ways of selecting 2 out of its 3 rows or columns, and there are 3 bands and 3 stacks (6 in total), there are at least 18 (3 multiplied by 6) minimal unavoidable sets of the chain type in any grid.
 
 
+## OVERLAP OF MINIMAL UNAVOIDABLE SETS
+
+Two minimal unavoidable sets can share some cells. I call that “overlap”. Below is an example of an AB-BA-AB type set and a chain type set sharing some cells.
+
+![](/images/overlap.webp)
+
+This means that each cell in the grid can be part of multiple minimal unavoidable sets.
 
 
+## MIXED STRUCTURES
+
+Some minimal unavoidable sets are the result of connecting parts of two or more different types of minimal unavoidable sets. The previous examples with different connectivity structures had all parts of the same type, but that's not the only possibility.
+
+For example, below is a minimal unavoidable set with an AB-BA-AB part, and a chain part.
+
+![](/images/)
+
+The connector is in box 1. The AB-BA-AB part is in the first stack (left to right), and the chain part is the first band (top to bottom). The 2 different types of sets are connected by the connector in box 1. They stop being 2 individual sets and merge to form 1 new minimal unavoidable set, with what I call "mixed structure".
+
+Here are more examples with different mixes and connectivity structures:
+
+![](/images/)
+
+![](/images/)
+
+![](/images/)
 
 
 
