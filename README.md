@@ -296,5 +296,56 @@ Here are more examples with different mixes and connectivity structures:
 </sup>
 
 
+## CONNECTOR CONFLICT
+
+There is a particular type of minimal unavoidable set that is produced by what I call “connector conflict”.
+
+To explain this concept, let’s start with this:
+
+![](/images/.webp)
+
+Above you can see two grid examples with similar chain type sets, each with connector cells in the same 2 columns and 2 rows, but in different positions. This illustrates that, as long as the connector cells are in the correct columns and rows, they can be positioned in 2 different ways.
+
+Of course, in a solved grid, the position of the connector cells is already determined, but if the grid is not solved, a unique position of the connector cells is not always possible to determine.
+
+Now let’s look at the following example showing two chain type sets in the same grid, both with a connector in box 1, with cells in the same columns and rows.
+
+![](/images/.webp)
+
+If we remove only the digits from both connectors, the incomplete grid still has an unique solution, because we can still deduce the positions of the missing digits thanks to the digits in the rest of both minimal unavoidable sets. But if we remove some of the other digits from both sets as well, the grid would have more than 1 solution.
+
+This happens because, by removing those other digits, we lose the information necessary to determine which connector’s cells go in which position, so both ways of positioning the connector cells become possible:
+
+![](/images/.webp)
+
+So, a connector conflict occurs when 2 connectors use the same 2 columns and 2 rows in a box, and there aren’t other digits to determine how the cells of each connector are positioned.
+
+
+### Other than the digits of the connectors, what digits should be removed to produce a connector conflict?
+
+I’m not completely sure and can’t rigorously prove and explain how this works. However, I can give an explanation based on what I understand.
+
+First, we have to consider that for a connector conflict to occur we need 2 connectors in the same box and the same 2 columns and rows. Each connector links 2 parts of a minimal unavoidable set. So, we are considering 2 connectors, 2 parts linked to one connector, and 2 parts linked to the other connector.
+
+![](/images/.webp)
+
+Now, to produce a connector conflict, we need to remove the digits in both connectors, the digits in one of the 2 parts linked to one connector, and the digits in one of the 2 parts linked to the other connector. That should be enough to create the ambiguity necessary to produce a connector conflict.
+
+Because, for each connector, we have 2 options of parts from which to remove digits, there are 4 different minimal unavoidable sets that can be produced with the same connector conflict.
+
+![](/images/.webp)
+
+
+### Reasoning about the minimum number of unavoidable sets produced by connector conflict
+
+Every 2 cells within a box and in different columns and rows form a connector. If you select any 2 cells like this, you will see that they form a connector of at least an AB-BA-AB type set or a chain type set.
+
+A connector conflict requires 2 connectors in the same box using the same 2 columns and 2 rows.
+
+In a box, there are 3 ways of selecting 2 columns, and 3 ways of selecting 2 rows, so there are 9 cases of 2 connectors with the same 2 columns and 2 rows per box. There are 9 boxes, so the total number of possible connector conflicts is 81.
+
+Previously I described how each connector conflict can produce 4 different unavoidable sets. This means that, in any grid, there are at least 324 (81 multiplied by 4) distinct unavoidable sets produced solely by connector conflict. 
+
+I don’t know if these 324 unavoidable sets are also minimal, because I can’t rule out the possibility of some of the sets containing all the cells of a minimal unavoidable set, which would mean that those sets are not minimal.
 
 
