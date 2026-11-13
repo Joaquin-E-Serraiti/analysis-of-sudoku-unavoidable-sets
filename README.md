@@ -1,6 +1,19 @@
 # Analysis of Minimal Unavoidable Sets
 ![](/images/first_image.webp)
 
+## TABLE OF CONTENTS
+
+- [INTRODUCTION](#introduction)
+- [SOME DEFINITIONS](#some-definitions)
+- [SOME BASIC TYPES OF MINIMAL UNAVOIDABLE SETS](#some-basic-types-of-minimal-unavoidable-sets)
+- [THE CONNECTIVITY STRUCTURE](#the-connectivity-structure)
+- [OVERLAP OF MINIMAL UNAVOIDABLE SETS](#overlap-of-minimal-unavoidable-sets)
+- [MIXED STRUCTURES](#mixed-structures)
+- [CONNECTOR CONFLICT](#connector-conflict)
+- [APPLYING THE CONCEPTS](#applying-the-concepts)
+- [FINAL WORDS](#final-words)
+
+
 ## INTRODUCTION
 In this document I attempt to analyze and classify the structure of some (not all) minimal unavoidable sets in Sudoku.
 
@@ -442,5 +455,10 @@ And, as we can see, one of those combinations is the minimal unavoidable set tha
 This means that our initial minimal unavoidable set was produced by a connector conflict between 2 other minimal unavoidable sets with mixed structures (sets A and B).
 
 
+## FINAL WORDS
 
+All the minimal unavoidable sets in this document were designed by hand.
 
+I believe that a computer would also be able to create and analyze minimal unavoidable sets that follow the rules and patterns described in this document, and it might be possible to develop a program to find all those minimal unavoidable sets for any given grid.
+
+The concepts described in this document were conceived with the purpose of explaining the structure of minimal unavoidable sets. There are other minimal unavoidable sets that I can't yet explain with the concepts developed so far, so there is room for adapting and finding better ideas and explanations.
