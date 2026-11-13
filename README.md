@@ -302,21 +302,31 @@ There is a particular type of minimal unavoidable set that is produced by what I
 
 To explain this concept, let’s start with this:
 
-![](/images/.webp)
+![](/images/different_connector_cells_positions.webp)
 
 Above you can see two grid examples with similar chain type sets, each with connector cells in the same 2 columns and 2 rows, but in different positions. This illustrates that, as long as the connector cells are in the correct columns and rows, they can be positioned in 2 different ways.
 
 Of course, in a solved grid, the position of the connector cells is already determined, but if the grid is not solved, a unique position of the connector cells is not always possible to determine.
 
-Now let’s look at the following example showing two chain type sets in the same grid, both with a connector in box 1, with cells in the same columns and rows.
+Now let’s look at the following example showing two AB-BA-AB type sets in the same grid, both with a connector in box 5, with cells in the same 2 columns and 2 rows.
 
-![](/images/.webp)
+![](/images/connector_conflict.webp)
+
+<sup>
+
+- 000000000000000000000210000002100000001000200000002100000021000000000000000000000
+
+- 000034000000000000000000000000003004400000003300400000000000000000000000000340000
+
+- 916834527234795816875216439752183964481569273369472185547621398623958741198347652
+  
+</sup>
 
 If we remove only the digits from both connectors, the incomplete grid still has an unique solution, because we can still deduce the positions of the missing digits thanks to the digits in the rest of both minimal unavoidable sets. But if we remove some of the other digits from both sets as well, the grid would have more than 1 solution.
 
 This happens because, by removing those other digits, we lose the information necessary to determine which connector’s cells go in which position, so both ways of positioning the connector cells become possible:
 
-![](/images/.webp)
+![](/images/connector_conflict_possible_solutions.webp)
 
 So, a connector conflict occurs when 2 connectors use the same 2 columns and 2 rows in a box, and there aren’t other digits to determine how the cells of each connector are positioned.
 
@@ -327,13 +337,31 @@ I’m not completely sure and can’t rigorously prove and explain how this work
 
 First, we have to consider that for a connector conflict to occur we need 2 connectors in the same box and the same 2 columns and rows. Each connector links 2 parts of a minimal unavoidable set. So, we are considering 2 connectors, 2 parts linked to one connector, and 2 parts linked to the other connector.
 
-![](/images/.webp)
+![](/images/connected_parts.webp)
 
 Now, to produce a connector conflict, we need to remove the digits in both connectors, the digits in one of the 2 parts linked to one connector, and the digits in one of the 2 parts linked to the other connector. That should be enough to create the ambiguity necessary to produce a connector conflict.
 
 Because, for each connector, we have 2 options of parts from which to remove digits, there are 4 different minimal unavoidable sets that can be produced with the same connector conflict.
 
-![](/images/.webp)
+![](/images/connector_conflict_mua_1.webp)
+
+<sup>
+
+- 000034000000000000000000000002103000001000200000402100000000000000000000000340000
+
+- 000034000000000000000210000000103000000000000000402000000021000000000000000340000
+  
+</sup>
+
+![](/images/connector_conflict_mua_2.webp)
+
+<sup>
+
+- 000000000000000000000000000002103004401000203300402100000000000000000000000000000
+
+- 000000000000000000000210000000103004400000003300402000000021000000000000000000000
+  
+</sup>
 
 
 ### Reasoning about the minimum number of unavoidable sets produced by connector conflict
