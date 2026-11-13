@@ -377,3 +377,70 @@ Previously I described how each connector conflict can produce 4 different unavo
 I don’t know if these 324 unavoidable sets are also minimal, because I can’t rule out the possibility of some of the sets containing all the cells of a minimal unavoidable set, which would mean that those sets are not minimal.
 
 
+## APPLYING THE CONCEPTS
+
+Now I will use all the concepts described in this document to analyze the structure of a more complex minimal unavoidable set:
+
+![](/images/initial_mua_with_complex_structure.webp)
+
+<sup>
+
+- 001200503230010000560000000312000000400320050050140300000000000000000000640000035
+
+- 871264593239815746564793218312658974498327651756149382183576429925431867647982135
+  
+</sup>
+
+First, we can identify the following minimal unavoidable sets in the grid, which we will call sets A and B:
+
+![](/images/set_a.webp)
+
+<sup>
+
+- 000000503000000000560000000000000000400300050050040300000000000000430000640000035
+
+</sup>
+
+![](/images/set_b.webp)
+
+<sup>
+
+- 001200000230010000000000000312000000000020001000100002000000000000000000000000000
+
+</sup>
+
+We can observe that both sets have a connector in box 5, with cells in the same 2 columns and 2 rows. This means that a connector conflict can occur with those connectors.
+
+Here are the 2 parts that each connector is connecting:
+
+![](/images/set_a_parts.webp)
+
+![](/images/set_b_parts.webp)
+
+If we select 1 out of the 2 parts connected to each connector, we get 4 possible distinct combinations. This means that 4 minimal unavoidable sets can be produced thanks to the connector conflict:
+
+![](/images/possible_combinations_1.webp)
+
+<sup>
+
+- 000000000000000000000000000000000000000320001000140002000000000000430000000000000
+
+- 001200000230010000000000000312000000000320000000140000000000000000430000000000000
+
+</sup>
+
+![](/images/possible_combinations_2.webp)
+
+<sup>
+
+- 000000503000000000560000000000000000400320051050140302000000000000000000640000035
+
+</sup>
+
+And, as we can see, one of those combinations is the minimal unavoidable set that we were analyzing.
+
+This means that our initial minimal unavoidable set was produced by a connector conflict between 2 other minimal unavoidable sets with mixed structures (sets A and B).
+
+
+
+
