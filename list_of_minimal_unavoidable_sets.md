@@ -2,7 +2,7 @@
 
 This is a list with minimal unavoidable sets with 12 or less cells, in minlex form, and grouped by size. I found it on the EnjoySudoku forum. It was shared by the user named "blue". [This is the link to the forum thread](https://web.archive.org/web/20261114114954/http://forum.enjoysudoku.com/ed-russell-s-unavoidable-set-blueprints-t40241.html).
 
-I'm not sure if these represent all the possible minimal unavoidable sets. I also haven't checked that all these sets are indeed minimal unavoidable sets.
+I'm not sure if these represent all the possible minimal unavoidable sets. I also haven't checked that all these sets are in fact minimal unavoidable sets.
 
 This list can be used to see how many minimal unavoidable sets can be described in terms of the framework defined on [my analysis](/README.md). Minimal unavoidable sets that can't be described in terms of that framework show possible places to improve and adapt it.
 
