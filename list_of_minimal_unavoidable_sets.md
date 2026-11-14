@@ -1,6 +1,6 @@
 # List of minimal unavoidable sets with 12 or less cells
 
-This is a list with minimal unavoidable sets with 12 or less cells, in minlex form, and grouped by size. I found it on the EnjoySudoku forum. It was shared by the user named "blue". [This is the link to the forum thread](http://forum.enjoysudoku.com/ed-russell-s-unavoidable-set-blueprints-t40241.html).
+This is a list with minimal unavoidable sets with 12 or less cells, in minlex form, and grouped by size. I found it on the EnjoySudoku forum. It was shared by the user named "blue". [This is the link to the forum thread](https://web.archive.org/web/20261114114954/http://forum.enjoysudoku.com/ed-russell-s-unavoidable-set-blueprints-t40241.html).
 
 I'm not sure if these represent all the possible minimal unavoidable sets. I also haven't checked that all these sets are indeed minimal unavoidable sets.
 
